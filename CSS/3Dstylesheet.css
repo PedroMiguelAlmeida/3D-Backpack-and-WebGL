@@ -1,0 +1,77 @@
+body 
+{
+  background-color: dimgray;
+  margin: 0;
+
+}
+canvas {
+  width: 100%;height: 100%
+
+}
+
+/* Style the links inside the sidenav */
+#mySidenav a {
+  position: absolute; /* Position them relative to the browser window */
+  left: -80px; /* Position them outside of the screen */
+  transition: 0.3s; /* Add transition on hover */
+  padding: 15px; /* 15px padding */
+  width: 100px; /* Set a specific width */
+  text-decoration: none; /* Remove underline */
+  font-size: 20px; /* Increase font size */
+  color: white; /* White text color */
+  border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+}
+
+#mySidenav a:hover {
+  left: 0; /* On mouse-over, make the elements appear as they should */
+}
+
+/* The about link: 20px from the top with a green background */
+#btn_color_handle {
+  top: 5%;
+  background-color: violet;
+}
+
+#btn_color_zip {
+  top: 8%;
+  background-color: grey;
+}
+
+#btn_color_pads {
+  top: 11%;
+  background-color: #4CAF50;
+}
+
+#btn_color_sides {
+  display: inline-block;
+  top: 14%;
+  background-color: orange;
+}
+
+#btn_color_top {
+  display: inline-block;
+  top: 14%;
+  background-color: plum;
+}
+
+#btn_color_back {
+  top: 17%;
+  background-color:blue;
+}
+
+#btn_color_front {
+  top: 20%;
+  background-color: black;
+}
+
+#btn_color_top {
+  display: inline-block;
+  top: 23%;
+  background-color: plum;
+}
+
+#btn_animate {
+  top: 33%;
+  background-color: #f44336; 
+}
+

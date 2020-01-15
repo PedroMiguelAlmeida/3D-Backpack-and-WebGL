@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"   content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Mochila LaRedoute</title> 
+
+<link rel="stylesheet" href="CSS/stylesheet.css">
+<link rel="stylesheet" href="bootstrap">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+    <div class="header">
+        <a href="https://www.laredoute.pt/" class="button">LaRedoute</a>
+        <a href="https://www.laredoute.pt/login/login.aspx" class="login_button">Login</a>
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="https://www.laredoute.pt/">Home</a>
+            <a href="https://www.laredoute.pt/myaccount/ordertracingall.aspx">Account</a>
+            <a href="https://www.laredoute.pt/shoppingbasket/basket.aspx">Shopping Cart</a>
+            <a href="https://www.laredoute.pt/services/faq.aspx">Support</a>
+      </div>
+      <div id="main">
+            <button class="openbtn" onclick="openNav()">&#9776;</button>
+      </div>
+
+    </div>
+
+
+    <div class="pimg1">
+        <div class="ptext">
+            <span class="border ">
+                <h1>For your outdoor <br/> <br/> <br/> adventures</h1>
+            </span>
+        </div>  
+    </div>
+
+    <section class="section section-light">
+        <h2>Scroll down to unveil the backpack model.</h2>  
+    </section>
+
+    <div class="pimg2">
+        <div class="ptext">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="IMG/front.png" alt="Backpack photo">
+                <div class="card-body">
+                </div>
+                <!--<a href="3DView.html" class="dbutton">3DModel</a>-->
+                <p><a href="3DView.html" id="d_view" onclick="centeredPopup(this.href,'myWindow','700','300','yes');return false">3DView</a></p>
+            </div>
+            <div class="card_description" style="width: 18rem;">
+                <div class="card-body">
+                  <span class="card-text">
+                        <p>Dimensions:30x29x32 cm.<br/></p>
+                        <p>Materials:Poliester.<br/></p>
+                        <p>Avaiable Colors:Black,Blue,Brown.</p>
+                  </span>
+                </div>
+            </div>
+        </div>  
+    </div>
+    <script>
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+    </script>    
+    <script language="javascript">
+    var popupWindow = null;
+    function centeredPopup(url,winName,w,h,scroll){
+
+        LeftPosition = (screen.width) ? (screen.width-w)/2 : 0;
+        TopPosition = (screen.height) ? (screen.height-h)/2 : 0;
+        settings =
+        'height='+h+',width='+w+',top='+TopPosition+',left='+LeftPosition+',scrollbars='+scroll+',resizable'
+        popupWindow = window.open(url,winName,settings)
+    }
+    </script>
+
+</body>
+</html>
